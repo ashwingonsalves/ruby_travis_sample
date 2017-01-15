@@ -11,8 +11,6 @@ caps["browserstack.debug"] = "true"
 caps["build"] = "Supp Travis RUN"
 caps["project"] = "Supp Travis RUN"
 
-puts ENV['BROWSERSTACK_USER']
-
 driver = Selenium::WebDriver.for(:remote,
   :url => "http://"+ENV['BROWSERSTACK_USER']+":"+ENV['BROWSERSTACK_ACCESS_KEY']+"@hub.browserstack.com/wd/hub",
   :desired_capabilities => caps)
