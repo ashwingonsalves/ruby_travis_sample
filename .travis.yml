@@ -1,0 +1,16 @@
+language: ruby
+
+rvm: 2.0.0
+
+env:
+  addons:
+    browserstack:
+      username: "ashwingonsalves2"
+      access_key:
+        secure: "cLz/01RZ62lcC5RAt+0otgAhqgvl5s/Z+0nixbL4g3nKu1ru3YmBcnJSqKnWnLawk0p8ynkrGZVgYxF+gJagbPZVzI7Ke8IJIPZZ3uiDM3oWPamQQtVkcoUlguIkUd0YEJeYWsnIeNYA5FPZaHmh825RZtnVnJJLhe6Ox3P3IQvoGeGO1iKqacUGs63sj1r8hE0pcEksLl2cZkf0hozObT2xVbqXfuVpvY4JjteJ0ESy4AJEfhViBat2+B5bi59JGAMLhvLixkI1uZjmW0UnXIO0w0RRAsEiYHMzlW7XhgX0rYELXevdXjJ8m14IsHNFoLf2qcfHb94XzaihYwOs0eyt9DpdH9wHYTe11njEFUsL/6qtUOztW+6HUgwlsix8slLuRWWObgTHzVW4ZQYbpNcg+DnN49y67tnLH1gUlf+Dkg0nw7UxioKWhAtpY9nMu3DR3BizOgClfMtGFiTDWeO2t95fVi8kemCJcaCyAgMGsod/xTWqk2vBgcbHxlPOLvAQ7MfzHz+Td2F3x3yPUpnfFrGEyxoZSXTwbQebN7I9cG8IrOK/AkhnqgsP+X2B0lAKwK3DiWysJHeUMYJg83uT3nvzzKUPhOy3PHcNcfriRaH5SVCTVqgHlXX0gEW//6ocJYdQVKNTj7pHPtNbODReadIZPYMs6IGv9QpreKM="
+  
+before_script:
+  - gem install selenium-webdriver
+
+script:
+  - ruby travis_test.rb
