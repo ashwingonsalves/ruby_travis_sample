@@ -13,4 +13,4 @@ before_script:
   - gem install selenium-webdriver
 
 script:
-  - ruby travis_test.rb
+  - ruby sample_test.rb
