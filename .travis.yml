@@ -12,4 +12,4 @@ before_script:
   - gem install selenium-webdriver
 
 script:
-  - ruby sample_test.rb
+  - ruby local_test.rb
