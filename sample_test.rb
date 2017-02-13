@@ -8,8 +8,8 @@ caps["browser_version"] = "54.0"
 caps["os"] = "Windows"
 caps["os_version"] = "10"
 caps["browserstack.debug"] = "true"
-caps["build"] = ENV['BROWSERSTACK_BUILD']
-caps["project"] = "Supp Travis RUN"
+caps["build"] = ENV['BS_AUTOMATE_BUILD']
+caps["project"] = ENV['BS_AUTOMATE_PROJECT']
 caps["name"] = "Sample Test"
 
 driver = Selenium::WebDriver.for(:remote,
